@@ -1,0 +1,10 @@
+def check(roster,present):
+    Absent=[]
+    for i in roster:
+        if not i in present:
+            Absent.append(i)
+        Absent.sort()
+    return Absent
+test_roster = ['Jessica', 'Nick', 'Winston', 'Schmidt', 'Cece', 'Ferguson']
+test_present = ['Nick', 'Cece', 'Schmidt', 'Jessica']
+print(check(test_roster, test_present))
